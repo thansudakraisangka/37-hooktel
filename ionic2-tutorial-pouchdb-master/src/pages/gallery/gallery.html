@@ -1,0 +1,58 @@
+<!--
+  Generated template for the GalleryPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Gallery</ion-title>
+  </ion-navbar>
+
+</ion-header>
+	
+
+<ion-content padding>
+
+
+	<ion-slides pager>
+
+
+
+  <ion-slide> 
+    <h3>Pool</h3>
+    <img src="/img/pool.jpg"/>
+    <img src="/img/pool2.jpg"/><img src="/img/pool4.jpg"/>
+  </ion-slide>
+
+  <ion-slide>
+    <h2>Spa</h2><img src="/img/spa.jpg"/><img src="/img/spa2.jpg"/><img src="/img/spa3.jpg"/>
+  </ion-slide>
+
+  <ion-slide>
+    <h2>Bar</h2><img src="/img/bar.jpg"/><img src="/img/bar2.jpg"/><img src="/img/bar4.jpg"/>
+  </ion-slide>
+
+</ion-slides>
+
+	 <ion-buttons >
+      <button ion-button (click)="goback()" >
+        Home
+      </button>
+    </ion-buttons>
+
+    <ion-buttons >
+      <button ion-button (click)="goroom()" >
+         Room
+      </button>
+    </ion-buttons>
+
+    <ion-buttons >
+      <button ion-button (click)="gobook()" >
+         Booked
+      </button>
+    </ion-buttons>
+
+
+</ion-content>

@@ -1,0 +1,53 @@
+<!--
+  Generated template for the SignupPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>  
+  <ion-navbar>
+    
+    
+    <ion-title>{{ action }} Customer</ion-title>
+    
+    
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>  
+    <ion-list>
+        <ion-item>
+            <ion-label>Name</ion-label>
+            <ion-input text-right type="text" [(ngModel)]="birthday.Name"></ion-input>
+        </ion-item>
+
+         <ion-item>
+            <ion-label>Username</ion-label>
+            <ion-input text-right type="email" [(ngModel)]="birthday.Username"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Password</ion-label>
+            <ion-input text-right type="password" [(ngModel)]="birthday.Password"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Cornfirm Password</ion-label>
+            <ion-input text-right type="password" [(ngModel)]="birthday.ConPassword"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Birthday</ion-label>
+            <ion-datetime displayFormat="MMMM D, YYYY" pickerFormat="MMMM D YYYY" [(ngModel)]="isoDate"></ion-datetime>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Telephone</ion-label>
+            <ion-input text-right type="password" [(ngModel)]="birthday.Telephone"></ion-input>
+        </ion-item>
+
+    </ion-list>
+    <button ion-button block (click)="save()">Save</button>
+    <button ion-button block (click)="goback()">Go Back</button>
+  
+</ion-content> 
